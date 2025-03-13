@@ -1,12 +1,10 @@
-import HomePage from "./Components/HomePage"
-function App() {
-  
-
+import HomePage from "./Components/HomePage";
+const Layout = () => {
   return (
     <>
-      <HomePage />
+    <HomePage />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default Layout;
