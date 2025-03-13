@@ -9,7 +9,7 @@ import { CiSettings } from "react-icons/ci";
 const Sidebar = () => {
   return (
     <>
-        <div className="w-[15.75rem] h-[47rem] bg-white">
+        <div className="w-[15.75rem] h-[47rem] bg-white border">
             <div className="w-[11.75rem] h-[2.5rem] mt-[2rem] gap-3 ml-[2rem] flex items-center">
                 <img src={img1} alt="img1" className="w-[2.5rem] h-[2.5rem]"/>  
                 <h1 className="w-[8.5rem] h-[2.5rem] font-[Plus Jakarta Sans] font-semibold text-[2rem] leading-[1.5] tracking-[-0.03em] align-middle text-[#141522]"
