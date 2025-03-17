@@ -4,8 +4,7 @@ import Img1 from  '../assets/Profile.png';
 const Header = () => {
     return (
         <>
-            {/* <div className="py-4 flex justify-evenly bg-white"> */}
-            <div className="py-4 flex justify-between items-center px-4 bg-white">
+             <div className="py-4 flex justify-between items-center px-4 bg-white w-[63%]">
                 <div className="w-[14.75rem] h-[4.5rem] mt-[2rem] ml-[2rem] gap-2 hidden md:block">
                     <h1 className="text-[#141522] font-[600] text-[24px] leading-[150%] tracking-[-0.03em] align-middle">
                     Hi, Dennis Nzioki
