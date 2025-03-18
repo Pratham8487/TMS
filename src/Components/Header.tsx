@@ -1,23 +1,26 @@
 import { CiShoppingCart } from "react-icons/ci";
-import Img1 from  '../assets/Profile.png';
+import Img1 from "../assets/Profile.png";
 
 const Header = () => {
-    return (
-        <>
-             <div className="py-4 flex justify-between items-center px-4 bg-white w-[63%]">
-                <div className="w-[14.75rem] h-[4.5rem] mt-[2rem] ml-[2rem] gap-2 hidden md:block">
-                    <h1 className="text-[#141522] font-[600] text-[24px] leading-[150%] tracking-[-0.03em] align-middle">
-                    Hi, Dennis Nzioki
-                    </h1>
-                    <p className="w-[14.75rem] h-[1.75rem] text-[#54577A] font-[500] text-[1rem] leading-[1.5] tracking-[-0.02em]">Let's finish your task today!</p>
-                </div>
-                <div className="w-[8rem] h-[3.25rem] mt-7  ml-auto gap-[1.5rem] flex">
-                    <CiShoppingCart className="w-[3.25rem] h-[3.25rem] text-gray-700 cursor-pointer rounded-full"/>
-                    <img src={Img1} alt="img1" className="w-[3.25rem] h-[3.25rem] rounded-full"/>
-                </div>    
-            </div>    
-        </>
-    )
-}
+  return (
+    <div className="py-4 flex justify-between items-center px-4 bg-white w-full md:w-[63%] max-w-screen-md">
+      {/* Left Side - Greeting Text (Hidden on Mobile) */}
+      <div className="hidden md:block mt-[2rem] ml-[2rem]">
+        <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em]">
+          Hi, Dennis Nzioki
+        </h1>
+        <p className="text-[#54577A] font-medium text-base tracking-[-0.02em]">
+          Let's finish your task today!
+        </p>
+      </div>
+
+      {/* Right Side - Icons */}
+      <div className="flex items-center gap-6 ml-auto">
+        <CiShoppingCart className="w-8 h-8 text-gray-700 cursor-pointer" />
+        <img src={Img1} alt="Profile" className="w-10 h-10 rounded-full" />
+      </div>
+    </div>
+  );
+};
 
 export default Header;

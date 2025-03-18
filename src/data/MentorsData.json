@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Curious George",
+      "role": "UI UX Design",
+      "tasks": 40,
+      "rating": 4.7,
+      "reviews": 750,
+      "image": "../assets/p1.png",
+      "followed": false
+    },
+    {
+      "id": 2,
+      "name": "Abraham Lincoln",
+      "role": "3D Design",
+      "tasks": 32,
+      "rating": 4.9,
+      "reviews": 510,
+      "image": "../assets/p2.png",
+      "followed": false
+    },
+    {
+      "id": 3,
+      "name": "Marie Curie",
+      "role": "Physics Research",
+      "tasks": 28,
+      "rating": 5.0,
+      "reviews": 620,
+      "image": "../assets/p2.png",
+      "followed": true
+    },
+    {
+      "id": 4,
+      "name": "Lincole George",
+      "role": "Web Design",
+      "tasks": 84,
+      "rating": 2.7,
+      "reviews": 150,
+      "image": "../assets/p1.png",
+      "followed": false
+    },
+    {
+      "id": 5,
+      "name": "Arjin Singh",
+      "role": "3D Design",
+      "tasks": 22,
+      "rating": 3.9,
+      "reviews": 510,
+      "image": "../assets/p2.png",
+      "followed": true
+    },
+    {
+      "id": 6,
+      "name": "Tom Cruise",
+      "role": "Scientist",
+      "tasks": 15,
+      "rating": 4.9,
+      "reviews": 995,
+      "image": "../assets/p1.png",
+      "followed": true
+    }
+  ]
+  
