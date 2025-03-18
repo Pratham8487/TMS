@@ -21,7 +21,7 @@ const Sidebar = () => {
             </div>
 
             {/* Sidebar */}
-            <div className={`w-[15.75rem] h-full bg-white fixed top-0 left-0 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 md:relative md:translate-x-0 md:block z-40`}>
+            <div className={`w-[15.75rem] h-[64rem] fixed bg-white  top-0 left-0 transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 md:relative md:translate-x-0 md:block z-40`}>
                 <div className="w-[11.75rem] h-[2.5rem] mt-[2rem] gap-3 ml-[2rem] flex items-center">
                     <img src={img1} alt="img1" className="w-[2.5rem] h-[2.5rem]"/>  
                     <h1 className="w-[8.5rem] h-[2.5rem] font-[Plus Jakarta Sans] font-semibold text-[2rem] leading-[1.5] tracking-[-0.03em] align-middle text-[#141522]">DNX</h1>
