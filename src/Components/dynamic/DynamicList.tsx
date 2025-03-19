@@ -3,8 +3,8 @@ import { useState } from "react";
 
 interface DynamicListProps {
   title: string;
-  data: any[]; // Accepts any array of data
-  CardComponent: React.FC<any>; // Accepts any React functional component
+  data: any[]; 
+  CardComponent: React.FC<any>; 
 }
 
 const DynamicList: React.FC<DynamicListProps> = ({
@@ -31,9 +31,8 @@ const DynamicList: React.FC<DynamicListProps> = ({
   return (
     <>
       <div className="flex justify-between items-center mt-4">
-        {/* Left Side: Title */}
         <h1 className="text-xl sm:text-2xl font-semibold">{title}</h1>
-        {/* Right Side: Icons */}
+
         <div className="flex items-center gap-3">
           <span
             onClick={index > 0 ? prevMentor : undefined}
@@ -55,9 +54,8 @@ const DynamicList: React.FC<DynamicListProps> = ({
           </span>
         </div>
       </div>
-
-      {/* Dynamic Card Component */}
-      <div className="flex flex-wrap gap-10 justify-start lg:justify-start pt-6 w-full">
+      {/* Dynamic Card Component - Show Two Cards Per Row */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 pt-6 w-full place-items-center">
         {data.slice(index, index + mentorsPerPage).map((item, idx) => (
           <CardComponent key={idx} {...item} />
         ))}

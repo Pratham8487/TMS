@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./layout/Layout";
 import HomePage from "./Components/HomePage";
-import MentorList from "./pages/DynamicList";
 import Sidebar from "./Components/Sidebar";
+import Mentors from "./pages/Mentors.tsx";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="mentors" element={<MentorList />} />
+          <Route path="mentors" element={<Mentors />} />  {/* Use the new Mentors page */}
           <Route path="sidebar" element={<Sidebar />} />
           <Route path="*" element={<NotFound />} />
         </Route>

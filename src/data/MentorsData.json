@@ -1,63 +1,182 @@
 [
-    {
-      "id": 1,
-      "name": "Curious George",
-      "role": "UI UX Design",
-      "tasks": 40,
-      "rating": 4.7,
-      "reviews": 750,
-      "image": "../assets/p1.png",
-      "followed": false
-    },
-    {
-      "id": 2,
-      "name": "Abraham Lincoln",
-      "role": "3D Design",
-      "tasks": 32,
-      "rating": 4.9,
-      "reviews": 510,
-      "image": "../assets/p2.png",
-      "followed": false
-    },
-    {
-      "id": 3,
-      "name": "Marie Curie",
-      "role": "Physics Research",
-      "tasks": 28,
-      "rating": 5.0,
-      "reviews": 620,
-      "image": "../assets/p2.png",
-      "followed": true
-    },
-    {
-      "id": 4,
-      "name": "Lincole George",
-      "role": "Web Design",
-      "tasks": 84,
-      "rating": 2.7,
-      "reviews": 150,
-      "image": "../assets/p1.png",
-      "followed": false
-    },
-    {
-      "id": 5,
-      "name": "Arjin Singh",
-      "role": "3D Design",
-      "tasks": 22,
-      "rating": 3.9,
-      "reviews": 510,
-      "image": "../assets/p2.png",
-      "followed": true
-    },
-    {
-      "id": 6,
-      "name": "Tom Cruise",
-      "role": "Scientist",
-      "tasks": 15,
-      "rating": 4.9,
-      "reviews": 995,
-      "image": "../assets/p1.png",
-      "followed": true
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Curious George",
+    "role": "UI UX Design",
+    "tasks": 40,
+    "rating": 4.7,
+    "reviews": 750,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": false
+  },
+  {
+    "id": 2,
+    "name": "Abraham Lincoln",
+    "role": "3D Design",
+    "tasks": 32,
+    "rating": 4.9,
+    "reviews": 510,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": false
+  },
+  {
+    "id": 3,
+    "name": "Marie Curie",
+    "role": "Physics Research",
+    "tasks": 28,
+    "rating": 5.0,
+    "reviews": 620,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 4,
+    "name": "Lincole George",
+    "role": "Web Design",
+    "tasks": 84,
+    "rating": 2.7,
+    "reviews": 150,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": false
+  },
+  {
+    "id": 5,
+    "name": "Mical Lusin",
+    "role": "3D Design",
+    "tasks": 22,
+    "rating": 3.9,
+    "reviews": 510,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 6,
+    "name": "Tom Cruise",
+    "role": "Scientist",
+    "tasks": 15,
+    "rating": 4.9,
+    "reviews": 995,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": true
+  },
+  {
+    "id": 7,
+    "name": "Albert Einstein",
+    "role": "Theoretical Physics",
+    "tasks": 50,
+    "rating": 5.0,
+    "reviews": 1200,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 8,
+    "name": "Steve Jobs",
+    "role": "Product Design",
+    "tasks": 78,
+    "rating": 4.8,
+    "reviews": 980,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": false
+  },
+  {
+    "id": 9,
+    "name": "Nikola Tesla",
+    "role": "Electrical Engineering",
+    "tasks": 61,
+    "rating": 4.9,
+    "reviews": 870,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 10,
+    "name": "Leonardo da Vinci",
+    "role": "Multidisciplinary Scientist",
+    "tasks": 89,
+    "rating": 5.0,
+    "reviews": 1500,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": false
+  },
+  {
+    "id": 11,
+    "name": "Ada Lovelace",
+    "role": "Mathematics & Computing",
+    "tasks": 35,
+    "rating": 4.8,
+    "reviews": 900,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 12,
+    "name": "Elon Musk",
+    "role": "Entrepreneur & Engineer",
+    "tasks": 67,
+    "rating": 4.7,
+    "reviews": 850,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": false
+  },
+  {
+    "id": 13,
+    "name": "Isaac Newton",
+    "role": "Physics & Mathematics",
+    "tasks": 55,
+    "rating": 5.0,
+    "reviews": 1100,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 14,
+    "name": "Mark Zuckerberg",
+    "role": "Software Development",
+    "tasks": 62,
+    "rating": 4.5,
+    "reviews": 780,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM0EWKy7UNg9fKhvoYaJ90d_ZbSD3AjhyVfw&s",
+    "followed": false
+  },
+  {
+    "id": 15,
+    "name": "Vincent van Gogh",
+    "role": "Painting & Art",
+    "tasks": 38,
+    "rating": 4.8,
+    "reviews": 720,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": false
+  },
+  {
+    "id": 16,
+    "name": "Bill Gates",
+    "role": "Software Development",
+    "tasks": 72,
+    "rating": 4.9,
+    "reviews": 1100,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  },
+  {
+    "id": 17,
+    "name": "Katherine Johnson",
+    "role": "NASA Mathematician",
+    "tasks": 29,
+    "rating": 5.0,
+    "reviews": 600,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": false
+  },
+  {
+    "id": 18,
+    "name": "Stephen Hawking",
+    "role": "Theoretical Physics",
+    "tasks": 48,
+    "rating": 5.0,
+    "reviews": 980,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQzg2-modiBeSBIckt_NcpipPPGQfZA_dbQ&s",
+    "followed": true
+  }
+]
