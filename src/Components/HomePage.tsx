@@ -81,26 +81,32 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Dynamic Lists with Parent-Controlled Grid */}
           <div className="rounded-lg p-6">
             <DynamicList
               title="Monthly Mentors"
               data={mentors}
               CardComponent={MentorCard}
+              // gridCols="grid-col-2 sm:grid-cols-1 md:grid-cols-1 "
             />
           </div>
+
           <div className="rounded-lg p-6">
             <DynamicList
               title="Upcoming Task"
               data={upcomingtask}
               CardComponent={UpcomingTaskCard}
+              gridCols="grid-col-2 sm:grid-cols-1 md:grid-cols-1"
             />
           </div>
         </div>
-        <div className="space-y-6 lg:-mt-28">
+
+        <div className="space-y-6 [@media(min-width:1460px)]:-mt-28">
           <div className="bg-white rounded-lg p-6">
             <Calendar />
           </div>
-          <div className="bg-white rounded-lg p-6">
+          <div className="bg-white rounded-lg p-6 ">
             <TaskToday />
           </div>
         </div>

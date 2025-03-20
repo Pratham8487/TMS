@@ -1,88 +1,3 @@
-// import { BsThreeDots } from "react-icons/bs";
-// import TaskData from "../../data/TaskToday.json";
-// import { UpcomingTaskCard } from "../dynamic/DynamicCard";
-
-// const detailedTask = [
-//   {
-//     title: "Detail Task",
-//     role: "UI/UX Designer",
-//     tasks: [
-//       {
-//         id: 1,
-//         description: "Understanding the tools in Figma",
-//       },
-//       {
-//         id: 2,
-//         description: "Understand the basics of making designs",
-//       },
-//       {
-//         id: 3,
-//         description: "Design a mobile application with Figma",
-//       },
-//     ],
-//   },
-// ];
-
-// export default function TaskToday() {
-//   return (
-//     <>
-//       {/* Task Today Section */}
-//       <div className="flex justify-between items-center mt-4">
-//         <h1 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[1rem] leading-[1.5] tracking-[-0.02em] flex items-center">
-//           Task Today
-//         </h1>
-//         <BsThreeDots />
-//       </div>
-//       <div className="rounded-lg p-6 flex flex-col gap-4 mx-auto bg-white">
-//         {TaskData.map((task) => (
-//           <UpcomingTaskCard key={task.id} {...task} />
-//         ))}
-//       </div>
-
-//       <hr className="m-6 text-gray-200" />
-
-//       {/* Detailed Task Section */}
-//       <div className="p-6 bg-white rounded-lg">
-//         {/* Header */}
-//         <div className="flex justify-between items-center py-3">
-//           <h2 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[1rem] leading-[1.5] tracking-[-0.02em]">
-//             {detailedTask[0].title}
-//           </h2>
-//           <p className="text-[#54577A] font-['Plus_Jakarta_Sans'] font-medium text-[0.75rem] leading-[1] tracking-[-0.02em]">
-//             {detailedTask[0].role}
-//           </p>
-//         </div>
-
-//         {/* Task List */}
-//         <ul className="mt-4 space-y-10">
-//           {detailedTask[0].tasks.map((task) => (
-//             <li key={task.id} className="flex items-center gap-4">
-//               <span className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[0.875rem] leading-[1.5] tracking-[-0.02em] w-8 h-8 rounded-xl bg-gray-100 text-center flex items-center justify-center">
-//                 {task.id}
-//               </span>
-//               <p className="text-[#141522] font-['Plus_Jakarta_Sans'] font-medium text-[0.875rem] leading-[1.5] tracking-[-0.02em] flex items-center">
-//                 {task.description}
-//               </p>
-//             </li>
-//           ))}
-//         </ul>
-
-//         {/* Button */}
-//         <div className="mt-6">
-//           <button className="mt-10 left-[1.5rem] gap-[0.625rem] px-[7.5rem]  w-full bg-[#546FFF] text-white text-sm font-semibold py-3 rounded-lg">
-//             Go To Detail
-//           </button>
-//         </div>
-//       </div>
-//     </>
-//   );
-// }
-
-
-
-
-
-
 import { BsThreeDots } from "react-icons/bs";
 import TaskData from "../../data/TaskToday.json";
 import { UpcomingTaskCard } from "../dynamic/DynamicCard";
@@ -110,7 +25,7 @@ const detailedTask = [
 
 export default function TaskToday() {
   return (
-    <>
+    <div>
       {/* Task Today Section */}
       <div className="flex justify-between items-center mt-4 px-4 md:px-0">
         <h1 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[1rem] md:text-lg leading-[1.5] tracking-[-0.02em] flex items-center">
@@ -131,7 +46,7 @@ export default function TaskToday() {
       <hr className="m-4 md:m-6 text-gray-200" />
 
       {/* Detailed Task Section */}
-      <div className="p-4 md:p-6 bg-white rounded-lg">
+      <div className="p-4 md:p-6 bg-white rounded-lg ">
         {/* Header */}
         <div className="flex justify-between items-center py-2 md:py-3">
           <h2 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[0.9rem] md:text-[1rem] leading-[1.5] tracking-[-0.02em]">
@@ -163,6 +78,6 @@ export default function TaskToday() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
