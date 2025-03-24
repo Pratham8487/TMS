@@ -2,13 +2,15 @@ import { CiShoppingCart } from "react-icons/ci";
 import { AiOutlineSearch } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
 import Img1 from "../assets/Profile.png";
+import { matchPath } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
   const isMentors = location.pathname === "/mentors";
-  const isTask = location.pathname === "/tasks";
   const isSettings = location.pathname === "/settings";
+  const isTask = location.pathname === "/tasks";
+  const isTaskId = matchPath("/tasks/:id", location.pathname);
 
   return (
     <div
@@ -36,7 +38,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search Mentors"
-                className="w-96 p-2 pl-6 pr-12 text-gray-700 border rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-96 p-2 pl-6 pr-12 text-gray-700 rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
               />
               <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
             </div>
@@ -49,8 +51,22 @@ const Header = () => {
             <div className="relative my-4">
               <input
                 type="text"
-                placeholder="Search Mentors"
-                className="w-96 p-2 pl-6 pr-12 text-gray-700 border rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
+                placeholder="Search Task"
+                className="w-96 p-2 pl-6 pr-12 text-gray-700 rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
+              />
+              <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
+            </div>
+          </>
+        ) : isTaskId ? (
+          <>
+            <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em]">
+              Detail Task
+            </h1>
+            <div className="relative my-4">
+              <input
+                type="text"
+                placeholder="Search Task"
+                className="w-96 p-2 pl-6 pr-12 text-gray-700 rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
               />
               <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
             </div>

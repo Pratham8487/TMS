@@ -4,7 +4,7 @@ import { FormControl, MenuItem, Select, Button, Switch } from "@mui/material";
 export default function Settings() {
   const [language, setLanguage] = useState("English (Default)");
   const [timezone, setTimezone] = useState("English (Default)");
-  const [timeFormat, setTimeFormat] = useState("24 Hours");
+  const [timeFormat, setTimeFormat] = useState("24  ");
   const [activeTab, setActiveTab] = useState("General");
 
   return (
@@ -60,18 +60,18 @@ export default function Settings() {
 
             <div className="flex flex-wrap gap-4 py-2">
               <Button
-                variant={timeFormat === "24 Hours" ? "contained" : "outlined"}
-                onClick={() => setTimeFormat("24 Hours")}
+                variant={timeFormat === "24  " ? "contained" : "outlined"}
+                onClick={() => setTimeFormat("24  ")}
                 className="sm:w-auto"
               >
-                24 Hours
+                24
               </Button>
               <Button
-                variant={timeFormat === "12 Hours" ? "contained" : "outlined"}
-                onClick={() => setTimeFormat("12 Hours")}
+                variant={timeFormat === "12  " ? "contained" : "outlined"}
+                onClick={() => setTimeFormat("12  ")}
                 className="sm:w-auto"
               >
-                12 Hours
+                12
               </Button>
             </div>
           </div>

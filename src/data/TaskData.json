@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Creating Awesome Mobile Apps",
+    "role": "UI UX Design",
+    "progress": 90,
+    "deadline": 1,
+    "deadlineText": "Hour",
+    "description": "Learn to design intuitive and user-friendly mobile apps.",
+    "studentsInvolved": 5,
+    "duration": "3 Hours",
+    "items": [
+      "Understanding the tools in Figma",
+      "Understand the basics of making designs",
+      "Designing a mobile application using Figma",
+      "Presenting the design flow"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Creating Fresh Website",
+    "role": "Web Developer",
+    "progress": 85,
+    "deadline": 2,
+    "deadlineText": "Hours",
+    "description": "Build responsive and modern websites using cutting-edge technologies.",
+    "studentsInvolved": 4,
+    "duration": "5 Hours",
+    "items": [
+      "Understanding the tools in Figma",
+      "Understand the basics of making designs",
+      "Designing a mobile application using Figma",
+      "Presenting the design flow"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Creating Color Palettes",
+    "role": "UI UX Design",
+    "progress": 100,
+    "deadline": 1,
+    "deadlineText": "Hour",
+    "description": "Design vibrant and appealing color palettes for projects.",
+    "studentsInvolved": 3,
+    "duration": "2 Hours",
+    "items": [
+      "Introduction to HTML and CSS",
+      "Understanding JavaScript fundamentals",
+      "Building a responsive webpage",
+      "Deploying websites on hosting platforms"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Designing Landing Page",
+    "role": "UI UX Design",
+    "progress": 75,
+    "deadline": 3,
+    "deadlineText": "Hours",
+    "description": "Create visually stunning and effective landing pages.",
+    "studentsInvolved": 6,
+    "duration": "4 Hours",
+    "items": [
+      "Understanding Python syntax",
+      "Working with data types and variables",
+      "Using loops and conditionals",
+      "Building simple Python applications"
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Developing E-commerce Website",
+    "role": "Full Stack Developer",
+    "progress": 60,
+    "deadline": 5,
+    "deadlineText": "Hours",
+    "description": "Learn to develop robust and scalable e-commerce platforms.",
+    "studentsInvolved": 8,
+    "duration": "8 Hours",
+    "items": [
+      "Understanding components and props",
+      "State management with useState",
+      "Handling events in React",
+      "Building a dynamic React app"
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Optimizing Website Performance",
+    "role": "Web Developer",
+    "progress": 40,
+    "deadline": 4,
+    "deadlineText": "Hours",
+    "description": "Enhance website speed and improve overall performance.",
+    "studentsInvolved": 7,
+    "duration": "6 Hours",
+    "items": [
+      "Understanding user experience",
+      "Wireframing and prototyping",
+      "Typography and color theory",
+      "Testing and iterating on designs"
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Creating Illustrations",
+    "role": "Graphic Designer",
+    "progress": 50,
+    "deadline": 3,
+    "deadlineText": "Hours",
+    "description": "Master the art of creating engaging and detailed illustrations.",
+    "studentsInvolved": 4,
+    "duration": "3 Hours",
+    "items": [
+      "Setting up a Node.js server",
+      "Understanding Express.js framework",
+      "Connecting to a database",
+      "Building RESTful APIs"
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Debugging Mobile App",
+    "role": "Mobile Developer",
+    "progress": 30,
+    "deadline": 6,
+    "deadlineText": "Hours",
+    "description": "Identify and fix bugs in mobile applications.",
+    "studentsInvolved": 5,
+    "duration": "7 Hours",
+    "items": [
+      "Understanding arrays and linked lists",
+      "Sorting and searching algorithms",
+      "Recursion and dynamic programming",
+      "Graph and tree algorithms"
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Writing API Documentation",
+    "role": "Backend Developer",
+    "progress": 80,
+    "deadline": 2,
+    "deadlineText": "Hours",
+    "description": "Write detailed and user-friendly API documentation.",
+    "studentsInvolved": 2,
+    "duration": "3 Hours",
+    "items": [
+      "Introduction to Flutter and Dart",
+      "Building UI with widgets",
+      "Handling state management",
+      "Deploying mobile apps"
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Testing Web Application",
+    "role": "QA Engineer",
+    "progress": 65,
+    "deadline": 3,
+    "deadlineText": "Hours",
+    "description": "Ensure web applications are tested for quality and bugs.",
+    "studentsInvolved": 6,
+    "duration": "5 Hours",
+    "items": [
+      "Understanding network security",
+      "Introduction to encryption",
+      "Ethical hacking basics",
+      "Protecting against cyber threats"
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Developing Chatbot",
+    "role": "AI Engineer",
+    "progress": 45,
+    "deadline": 5,
+    "deadlineText": "Hours",
+    "description": "Build chatbots that respond intelligently to user queries.",
+    "studentsInvolved": 8,
+    "duration": "10 Hours",
+    "items": [
+      "Understanding supervised learning",
+      "Working with regression models",
+      "Introduction to neural networks",
+      "Building ML models with Python"
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Creating Data Dashboard",
+    "role": "Data Analyst",
+    "progress": 55,
+    "deadline": 4,
+    "deadlineText": "Hours",
+    "description": "Visualize data effectively with interactive dashboards.",
+    "studentsInvolved": 4,
+    "duration": "6 Hours",
+    "items": [
+      "Introduction to cloud platforms",
+      "Understanding AWS, Azure, and GCP",
+      "Deploying applications on the cloud",
+      "Cloud security best practices"
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Fixing Security Vulnerabilities",
+    "role": "Cybersecurity Engineer",
+    "progress": 35,
+    "deadline": 6,
+    "deadlineText": "Hours",
+    "description": "Patch and secure vulnerabilities in applications.",
+    "studentsInvolved": 5,
+    "duration": "8 Hours",
+    "items": [
+      "Understanding DevOps principles",
+      "Working with Docker and Kubernetes",
+      "Continuous Integration and Deployment",
+      "Monitoring and logging"
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Automating Deployment",
+    "role": "DevOps Engineer",
+    "progress": 70,
+    "deadline": 3,
+    "deadlineText": "Hours",
+    "description": "Streamline deployment processes using automation tools.",
+    "studentsInvolved": 7,
+    "duration": "5 Hours",
+    "items": [
+      "Understanding Java syntax",
+      "Object-oriented programming concepts",
+      "Working with collections framework",
+      "Building Java applications"
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Creating Wireframes",
+    "role": "UI UX Design",
+    "progress": 95,
+    "deadline": 2,
+    "deadlineText": "Hours",
+    "description": "Create wireframes for mobile and desktop applications.",
+    "studentsInvolved": 6,
+    "duration": "2 Hours",
+    "items": [
+      "Understanding relational databases",
+      "SQL query fundamentals",
+      "Working with NoSQL databases",
+      "Database optimization techniques"
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Building Recommendation System",
+    "role": "Data Scientist",
+    "progress": 65,
+    "deadline": 4,
+    "deadlineText": "Hours",
+    "description": "Implement recommendation systems using machine learning.",
+    "studentsInvolved": 5,
+    "duration": "8 Hours",
+    "items": [
+      "Introduction to blockchain technology",
+      "Understanding smart contracts",
+      "Cryptocurrency trading basics",
+      "Decentralized applications (DApps)"
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Refactoring Code",
+    "role": "Software Engineer",
+    "progress": 55,
+    "deadline": 5,
+    "deadlineText": "Hours",
+    "description": "Improve the structure and performance of existing code.",
+    "studentsInvolved": 3,
+    "duration": "6 Hours",
+    "items": [
+      "Understanding Unity engine",
+      "Working with C# for game scripting",
+      "Building 2D and 3D games",
+      "Optimizing game performance"
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Designing Custom Animations",
+    "role": "Motion Designer",
+    "progress": 75,
+    "deadline": 3,
+    "deadlineText": "Hours",
+    "description": "Create eye-catching animations for websites and videos.",
+    "studentsInvolved": 4,
+    "duration": "4 Hours",
+    "items": [
+      "Understanding network topologies",
+      "Working with IP addressing",
+      "Configuring routers and switches",
+      "Network troubleshooting techniques"
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
+    "title": "Developing Real-Time Chat",
+    "role": "Backend Developer",
+    "progress": 85,
+    "deadline": 2,
+    "deadlineText": "Hours",
+    "description": "Set up real-time chat systems for applications.",
+    "studentsInvolved": 6,
+    "duration": "5 Hours",
+    "items": [
+      "Understanding AI concepts",
+      "Introduction to natural language processing",
+      "Working with AI models",
+      "AI ethics and future implications"
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
+    "title": "Prototyping New Features",
+    "role": "Product Designer",
+    "progress": 90,
+    "deadline": 2,
+    "deadlineText": "Hours",
+    "description": "Develop prototypes for testing and iterating new features.",
+    "studentsInvolved": 4,
+    "duration": "4 Hours",
+    "items": [
+      "Understanding SEO and SEM",
+      "Social media marketing tactics",
+      "Email marketing strategies",
+      "Analyzing marketing campaign data"
+    ]
+  }
+]

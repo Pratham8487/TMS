@@ -3,6 +3,7 @@ import Layout from "./layout/Layout";
 import HomePage from "./Components/HomePage";
 import Sidebar from "./Components/Sidebar";
 import Mentors from "./pages/Mentors.tsx";
+import TaskDetails from "./pages/TaskDetails.tsx";
 import Task from "./pages/Task.tsx";
 import Settings from "./pages/Settings.tsx";
 import NotFound from "./pages/NotFound";
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="tasks" element={<Task />} />
           <Route path="settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/tasks/:id" element={<TaskDetails />} /> 
         </Route>
       </Routes>
     </Router>

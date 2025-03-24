@@ -88,7 +88,7 @@ export default function Home() {
               title="Monthly Mentors"
               data={mentors}
               CardComponent={MentorCard}
-              // gridCols="grid-col-2 sm:grid-cols-1 md:grid-cols-1 "
+              gridCols="lg:grid-cols-2 sm:grid-cols-2 grid-cols-1"
             />
           </div>
 
@@ -97,7 +97,7 @@ export default function Home() {
               title="Upcoming Task"
               data={upcomingtask}
               CardComponent={UpcomingTaskCard}
-              gridCols="grid-col-2 sm:grid-cols-1 md:grid-cols-1"
+              gridCols="lg:grid-cols-2 sm:grid-cols-2 grid-cols-1"
             />
           </div>
         </div>

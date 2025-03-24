@@ -44,7 +44,8 @@ export default function Mentors() {
           title="Mentors"
           data={mentors}
           CardComponent={MentorCard}
-          gridCols="lg:grid-cols-4 sm:grid-cols-2 grid-cols-1"
+          gridCols="lg:grid-cols-4 lg:grid-rows-2 sm:grid-cols-2 grid-cols-1"
+          showAllInMobile={true}
         />
       </div>
     </div>
