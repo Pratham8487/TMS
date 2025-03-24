@@ -25,7 +25,7 @@ const detailedTask = [
 
 export default function TaskToday() {
   return (
-    <div>
+    <div className="max-h-[59rem] space-y-7">
       {/* Task Today Section */}
       <div className="flex justify-between items-center mt-4 px-4 md:px-0">
         <h1 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[1rem] md:text-lg leading-[1.5] tracking-[-0.02em] flex items-center">
@@ -35,7 +35,7 @@ export default function TaskToday() {
       </div>
 
       {/* Fixed Alignment for UpcomingTaskCard */}
-      <div className="rounded-lg p-4 md:p-6 flex flex-col gap-2 md:gap-4 mx-auto bg-white w-full">
+      <div className="rounded-lg p-4 flex flex-col gap-2 md:gap-4 mx-auto bg-white w-full">
         {TaskData.map((task) => (
           <div key={task.id} className="w-full">
             <UpcomingTaskCard {...task} />

@@ -102,7 +102,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="space-y-6 [@media(min-width:1460px)]:-mt-28">
+        <div className="space-y-8 [@media(min-width:1460px)]:-mt-28">
           <div className="bg-white rounded-lg p-6">
             <Calendar />
           </div>

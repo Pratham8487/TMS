@@ -10,11 +10,12 @@ const Header = () => {
   const isMentors = location.pathname === "/mentors";
   const isSettings = location.pathname === "/settings";
   const isTask = location.pathname === "/tasks";
+  const isHeader = location.pathname === "/messages";
   const isTaskId = matchPath("/tasks/:id", location.pathname);
 
   return (
     <div
-      className={`py-4 flex justify-between items-center px-4 bg-gray-50 w-full min-h-[11rem]  ${
+      className={`py-2 flex justify-between items-center px-2 bg-gray-50 w-full min-h-[7.25rem]  ${
         isHomePage ? "w-[63%] max-w-screen-md" : "w-full"
       }`}
     >
@@ -28,6 +29,12 @@ const Header = () => {
             <p className="text-[#54577A] font-medium text-base tracking-[-0.02em]">
               Let's finish your task today!
             </p>
+          </>
+        ) : isHeader ? (
+          <>
+            <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em]">
+              Message
+            </h1>
           </>
         ) : isMentors ? (
           <>

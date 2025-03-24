@@ -20,7 +20,7 @@
   {
     "id": 2,
     "image": "https://s3-alpha-sig.figma.com/img/3383/da9a/5e6800bc07f249dba70a9128599ffaa6?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=S-HEuVEFXq86UNSiSkUn1KKQhroK7p78tiR-wYzA3DVulS5R~rbeEWSVl~R04JGbABSlu~ZayfjtdFgSiqRmXu1d8aMNpIjQJxouTspbgR4hUL80CCx7IFdkIGC3OFsLZ05grNkilBrJYkAi8I6f7P7qsi0prkC0EW1TDcpIJoasdNfyIXX0TMlCUsurYQMqasYZ7vKn7RvNIVJhK25sBn55ILkE9-FZ2jLbjoe9lcbMAtE2oH0icIvjijMPcqiip3A6Z6ATtDwDX92aOWdPaY2XI1bzONU7IM8hof3opvOr8E7r9U8kXssqrW8nFURvnJWcVb~YrZjny2wYQ4tSlA__",
-    "title": "Creating Fresh Website",
+    "title": "Creating Fresh Website with Mobile View",
     "role": "Web Developer",
     "progress": 85,
     "deadline": 2,
@@ -38,7 +38,7 @@
   {
     "id": 3,
     "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
-    "title": "Creating Color Palettes",
+    "title": "Creating Color Palettes with Diffrent COlors",
     "role": "UI UX Design",
     "progress": 100,
     "deadline": 1,
@@ -56,7 +56,7 @@
   {
     "id": 4,
     "image": "https://s3-alpha-sig.figma.com/img/1d25/2753/c2202507d0496b4be017f255eebb9c31?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IWfGm2URPpW1ko2GfAq5Cq0W0EqlOkc5WUCIbCfC8C5JHGOWx6K-3F8YPZ4U8afZLgGNZdDVlzTtBaxMcdfFbhMD3xqvtP9Yee40Op2sZ7d5utCDFJ1ceh3C5TwYNlnjvm1GtwoRQg23IGxs5GsufrqrkEE1CmNVPvMn9otlwkvlB~DagGzR2PDnRbC9ro1DB8YhQRTiEZJ3cVzPRV~Xo8e5UbNLervakF7qNJ0L8fnlqwObg9hYkPcOqm50LN6GTSGRccCpai3hXsm-RIKHunaB9GC5xoKt-o8gUB11vf~3~1FEZ522~dRsvEv0o5sVE7RunwY0czVSlwxdMmK8nw__",
-    "title": "Designing Landing Page",
+    "title": "Designing Landing Page with Awesome colors",
     "role": "UI UX Design",
     "progress": 75,
     "deadline": 3,
