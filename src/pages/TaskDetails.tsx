@@ -16,7 +16,7 @@ const TaskDetails = () => {
   return (
     <div className="w-full h-full gap-[2rem] py-[1rem] px-[1rem] lg:py-[2rem] lg:px-[4rem] md:py-[1rem] md:px-[1rem] grid grid-cols-1 md:grid-cols-3">
       <div className="bg-white h-full w-full rounded-xl space-y-1 md:col-span-2">
-        <div className="border-4 rounded-xl border-yellow-300">
+        <div className="rounded-xl">
           <img
             src={task.image}
             className="w-full h-auto md:w-[47rem] md:h-[17rem] rounded-xl"
