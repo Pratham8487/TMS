@@ -7,7 +7,6 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  CartesianGrid,
 } from "recharts";
 import DynamicList from "./dynamic/DynamicList";
 import { MentorCard, UpcomingTaskCard } from "./dynamic/DynamicCard";
@@ -21,14 +20,25 @@ export default function Home() {
     { name: "S", value: 3 },
     { name: "M", value: 2 },
     { name: "T", value: 4 },
-    { name: "W", value: 5 },
+    { name: "W", value: 2 },
     { name: "T", value: 3 },
-    { name: "F", value: 4 },
+    { name: "F", value: 2 },
     { name: "S", value: 6 },
   ];
 
+  const CustomTooltip = ({ active, payload }: any) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="w-[5.25rem] h-[2.5rem] top-[3.8125rem] left-[5.125rem] gap-[0.625rem] rounded-[0.625rem] pt-[0.5rem] pr-[1.125rem] pb-[0.5rem] pl-[1.125rem] bg-[#141522]">
+          <p className="text-white">{payload[0].value} Task</p>
+        </div>
+      );
+    }
+    return null;
+  };
+
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-gray-50 px-6 py-3">
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_37%] gap-6">
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -51,7 +61,7 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-2 lg:h-[17rem]">
-              <div className="w-full max-w-[32rem] h-auto lg:h-full rounded-[0.625rem] bg-gray-200 mt-4 sm:mt-[2rem] px-4 py-2 mx-auto">
+              <div className="w-full max-w-[32rem] h-auto lg:h-full rounded-[0.625rem] bg-[#F5F5F7] mt-4 sm:mt-[2rem] px-4 py-2 mx-auto">
                 <div className="flex justify-between">
                   <h1 className="text-base sm:text-lg font-semibold">
                     Activity
@@ -61,19 +71,39 @@ export default function Home() {
                     <FaChevronDown className="hover:cursor-pointer" />
                   </div>
                 </div>
-                <div className="w-full h-auto mt-3 sm:mt-[1.3rem] rounded-[0.625rem] bg-white">
+                <div className="w-full h-auto pt-1 sm:mt-[1.3rem] rounded-[0.625rem]  bg-white">
                   <ResponsiveContainer width="100%" height={200}>
                     <LineChart data={data}>
-                      <XAxis dataKey="name" />
-                      <YAxis />
-                      <CartesianGrid strokeDasharray="3 3" />
-                      <Tooltip />
+                      {/* Define a shadow filter */}
+                      <defs>
+                        <filter
+                          id="shadow"
+                          x="-20%"
+                          y="-20%"
+                          width="140%"
+                          height="140%"
+                        >
+                          <feDropShadow
+                            dx="2"
+                            dy="2"
+                            stdDeviation="3"
+                            floodColor="rgba(20,21,34,0.5)"
+                          />
+                        </filter>
+                      </defs>
+
+                      <XAxis dataKey="name" tick={{ fill: "#141522" }} />
+                      <YAxis ticks={[1, 2, 3]} tick={{ fill: "#141522" }} />
+                      <Tooltip content={<CustomTooltip />} />
+
+                      {/* Apply the shadow filter to the line */}
                       <Line
                         type="monotone"
                         dataKey="value"
                         stroke="#141522"
                         strokeWidth={2}
                         dot={{ r: 5 }}
+                        filter="url(#shadow)" // Add shadow to the line
                       />
                     </LineChart>
                   </ResponsiveContainer>
@@ -102,7 +132,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="space-y-8 [@media(min-width:1460px)]:-mt-28">
+        <div className="space-y-8 [@media(min-width:1460px)]:-mt-26">
           <div className="bg-white rounded-lg p-6">
             <Calendar />
           </div>

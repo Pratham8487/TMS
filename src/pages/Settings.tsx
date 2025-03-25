@@ -4,7 +4,9 @@ import { FormControl, MenuItem, Select, Button, Switch } from "@mui/material";
 export default function Settings() {
   const [language, setLanguage] = useState("English (Default)");
   const [timezone, setTimezone] = useState("English (Default)");
-  const [timeFormat, setTimeFormat] = useState("24  ");
+  const [timeFormat, setTimeFormat] = useState(() => {
+    return localStorage.getItem("timeFormat") || "24";
+  });
   const [activeTab, setActiveTab] = useState("General");
 
   return (
@@ -59,20 +61,59 @@ export default function Settings() {
             </FormControl>
 
             <div className="flex flex-wrap gap-4 py-2">
-              <Button
-                variant={timeFormat === "24  " ? "contained" : "outlined"}
-                onClick={() => setTimeFormat("24  ")}
-                className="sm:w-auto"
+              <label
+                className={`flex items-center gap-2 border rounded-lg px-4 py-2 cursor-pointer ${
+                  timeFormat === "24"
+                    ? "border-blue-500 text-blue-600"
+                    : "border-gray-300 text-gray-600"
+                }`}
               >
-                24
-              </Button>
-              <Button
-                variant={timeFormat === "12  " ? "contained" : "outlined"}
-                onClick={() => setTimeFormat("12  ")}
-                className="sm:w-auto"
+                <input
+                  type="radio"
+                  name="timeFormat"
+                  value="24"
+                  checked={timeFormat === "24"}
+                  onChange={() => setTimeFormat("24")}
+                  className="hidden"
+                />
+                <span>24 Hours</span>
+                <span
+                  className={`w-4 h-4 border-2 rounded-full flex items-center justify-center ${
+                    timeFormat === "24" ? "border-blue-500" : "border-gray-300"
+                  }`}
+                >
+                  {timeFormat === "24" && (
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  )}
+                </span>
+              </label>
+
+              <label
+                className={`flex items-center gap-2 border rounded-lg px-4 py-2 cursor-pointer ${
+                  timeFormat === "12"
+                    ? "border-blue-500 text-blue-600"
+                    : "border-gray-300 text-gray-600"
+                }`}
               >
-                12
-              </Button>
+                <input
+                  type="radio"
+                  name="timeFormat"
+                  value="12"
+                  checked={timeFormat === "12"}
+                  onChange={() => setTimeFormat("12")}
+                  className="hidden"
+                />
+                <span>12 Hours</span>
+                <span
+                  className={`w-4 h-4 border-2 rounded-full flex items-center justify-center ${
+                    timeFormat === "12" ? "border-blue-500" : "border-gray-300"
+                  }`}
+                >
+                  {timeFormat === "12" && (
+                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                  )}
+                </span>
+              </label>
             </div>
           </div>
         )}

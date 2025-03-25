@@ -1,5 +1,7 @@
 import React from "react";
 import { CiClock2 } from "react-icons/ci";
+import MyIcon from "../../assets/Star.svg";
+import taskIcon from "../../assets/taskIcon.svg";
 
 interface Mentor {
   id: number;
@@ -32,7 +34,7 @@ export const MentorCard: React.FC<Mentor> = ({
   followed,
 }) => {
   return (
-    <div className="bg-[#FFFF] rounded-[0.625rem] p-8 sm:w-full min-h-[10rem] sm:h-40 flex flex-col justify-between">
+    <div className="bg-[#FFFF] rounded-[0.625rem] py-8 px-4 sm:w-full min-h-[10rem] sm:h-40 flex flex-col justify-between max-w-[20.5rem] max-h-[8.75rem]">
       <div className="flex items-center gap-3 ">
         <img
           src={image}
@@ -40,18 +42,46 @@ export const MentorCard: React.FC<Mentor> = ({
           className="w-12 h-12 sm:w-10 sm:h-10 rounded-full"
         />
         <div>
-          <h3 className="font-semibold text-base sm:text-sm">{name}</h3>
-          <p className="text-gray-500 text-sm sm:text-xs">{role}</p>
+          <h3 className="sm:text-sm text-[#141522] font-[Plus Jakarta Sans] font-semibold text-[1rem] leading-[150%] tracking-[-0.02em] align-middle">
+            {name}
+          </h3>
+          <p className="sm:text-xs text-[#9C9CA4] font-[Plus Jakarta Sans] font-normal text-[0.75rem] leading-[100%] tracking-[-0.01em] align-middle">
+            {role}
+          </p>
         </div>
-        <span className="text-blue-500 text-sm sm:text-xs ml-auto">
+        <span
+          className={`${
+            followed ? "text-[#54577A]" : "text-[#546FFF] sm:text-xs"
+          } font-[Plus Jakarta Sans] font-medium text-[0.875rem] leading-[150%] tracking-[-0.02em] text-right align-middle`}
+        >
           {followed ? "Followed" : "+ Follow"}
         </span>
       </div>
       <div className="flex justify-between text-sm sm:text-xs text-gray-600 mt-2">
-        <span>📜 {tasks} Task</span>
-        <span>
-          ⭐ {rating} ({reviews} Reviews)
-        </span>
+        <div className="flex gap-1.5">
+          <img
+            src={taskIcon}
+            alt="📜"
+            width={15}
+            height={15}
+            style={{ fill: "#54577A" }}
+          />
+          <span className="text-[#141522] font-[Plus Jakarta Sans] font-medium text-[0.875rem] leading-[150%] tracking-[-0.02em] align-middle">
+            {tasks} Task
+          </span>
+        </div>
+        <div className="flex gap-1.5">
+          <img
+            src={MyIcon}
+            alt="⭐"
+            width={10}
+            height={10}
+            style={{ fill: "#FFB054" }}
+          />
+          <span className="text-[#141522] font-[Plus Jakarta Sans] font-medium text-[0.875rem] leading-[150%] tracking-[-0.02em] align-middle">
+            {rating} ({reviews} Reviews)
+          </span>
+        </div>
       </div>
     </div>
   );
@@ -66,7 +96,7 @@ export const UpcomingTaskCard: React.FC<UpcomingTask> = ({
   deadlineText,
 }) => {
   return (
-    <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg bg-white flex flex-col gap-4 p-4">
+    <div className=" w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl rounded-lg bg-white flex flex-col gap-4 justify-between p-4 max-h-[25rem]">
       {/* Image Section */}
       <div className="flex justify-center">
         <img

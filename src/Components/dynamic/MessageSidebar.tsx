@@ -2,19 +2,26 @@ import { useState, useEffect } from "react";
 import SearchIcon from "../../assets/search.png";
 import Notification from "../../assets/Notification.png";
 
-export default function MessageSidebar() {
-  const [users, setUsers] = useState<
-    {
-      [x: string]: string | undefined;
-      Time: string;
-      id: string;
-      name: string;
-    }[]
-  >([]);
+interface User {
+  id: string;
+  name: string;
+  image?: string;
+  Time: string;
+  Active?: boolean;
+}
+
+export default function MessageSidebar({
+  onUserSelect,
+}: {
+  onUserSelect: (user: User) => void;
+}) {
+  const [users, setUsers] = useState<User[]>([]);
+  const [selectedUserId, setSelectedUserId] = useState<string | null>(null);
+
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("/src/data/Users.json"); // Fetch JSON file
+        const response = await fetch("/src/data/Users.json");
         const data = await response.json();
         setUsers(data);
       } catch (error) {
@@ -23,24 +30,38 @@ export default function MessageSidebar() {
     };
     fetchUsers();
   }, []);
+
   return (
     <div className="max-w-[26.375rem] max-h-[40rem] h-full py-4 px-1 bg-white">
       <div className="relative my-4 ">
         <input
           type="text"
           placeholder="Search Name"
-          className="min-w-92 p-2 pl-6 pr-12 text-[#8E92BC] rounded-xl outline-none shadow-xs focus:ring-2 focus:ring-indigo-500"
+          className="min-w-[25rem] p-2 pl-6 pr-12 text-[#8E92BC] rounded-xl outline-none shadow-xs focus:ring-2 focus:ring-indigo-500"
         />
         <img
           src={SearchIcon}
-          className="absolute right-8 top-1/2 h-[1.3rem] transform -translate-y-1/2 text-gray-500 text-xl"
+          className="absolute right-5 top-1/2 h-[1.3rem] transform -translate-y-1/2 text-gray-500 text-xl"
           alt="not found"
         />
       </div>
       <div className="w-full px-1 max-h-[32rem] pt-5 overflow-y-auto overflow-x-hidden">
         {users.map((user) => (
-          <div key={user.id}>
-            <div className="items-center w-[22rem] h-[3.5rem] hover:bg-[#FAFAFA] bg-[#FFFFFF] p-[0.625rem] px-[1.25rem] flex rounded-[0.625rem] gap-[0.625rem] hover:cursor-pointer">
+          <div
+            key={user.id}
+            onClick={() => {
+              setSelectedUserId(user.id);
+              onUserSelect(user);
+            }}
+          >
+            <div
+              className={`items-center w-[22rem] h-[3.5rem] p-[0.625rem] px-[1.25rem] flex rounded-[0.625rem] gap-[0.625rem] hover:cursor-pointer 
+              ${
+                selectedUserId === user.id
+                  ? "bg-[#FAFAFA]"
+                  : "bg-[#FFFFFF] hover:bg-[#FAFAFA]"
+              }`}
+            >
               <img
                 src={user.image}
                 alt="Not Found"
