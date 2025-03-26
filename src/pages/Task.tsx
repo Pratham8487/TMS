@@ -38,7 +38,7 @@ export default function Task() {
 
   return (
     <div>
-      <div className="p-[2rem] gap-[1.125rem]">
+      <div className="px-[2rem] py-[0.5rem] gap-[1.125rem]">
         <DynamicList
           title="Time Limit"
           data={TaskData}
@@ -50,7 +50,7 @@ export default function Task() {
           gridCols="lg:grid-cols-4 sm:grid-cols-2"
         />
       </div>
-      <div className="p-[2rem] gap-[1.125rem]">
+      <div className="px-[2rem] py-[0.5rem] gap-[1.125rem]">
         <DynamicList
           title="New Task"
           data={TaskData}

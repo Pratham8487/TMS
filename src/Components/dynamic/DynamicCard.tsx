@@ -12,6 +12,7 @@ interface Mentor {
   reviews: number;
   image: string;
   followed: boolean;
+  description?: string;
 }
 
 interface UpcomingTask {
@@ -32,9 +33,15 @@ export const MentorCard: React.FC<Mentor> = ({
   reviews,
   image,
   followed,
+  description,
 }) => {
   return (
-    <div className="bg-[#FFFF] rounded-[0.625rem] py-8 px-4 sm:w-full min-h-[10rem] sm:h-40 flex flex-col justify-between max-w-[20.5rem] max-h-[8.75rem]">
+    <div
+  className={`bg-[#FFFF] rounded-[0.625rem] px-4 sm:w-full min-h-[10rem] sm:h-40 flex flex-col justify-between max-w-[20.5rem] ${
+    description ? "min-h-[14.25rem] py-6 max-w-[22.25rem]" : "min-h-[8.75rem] py-8 max-w-[20.5rem]"
+  }`}
+>
+
       <div className="flex items-center gap-3 ">
         <img
           src={image}
@@ -57,6 +64,15 @@ export const MentorCard: React.FC<Mentor> = ({
           {followed ? "Followed" : "+ Follow"}
         </span>
       </div>
+
+      {description && (
+        <div>
+          <p className="text-[#8E92BC] font-[Plus Jakarta Sans] font-medium text-[0.875rem] leading-[200%] tracking-[0px] align-middle">
+            {description}
+          </p>
+        </div>
+      )}
+
       <div className="flex justify-between text-sm sm:text-xs text-gray-600 mt-2">
         <div className="flex gap-1.5">
           <img

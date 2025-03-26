@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "sender": "user",
+    "name": "You",
+    "message": "Morning Angelie, I have a question about My Task",
+    "time": "Today 11:52"
+  },
+  {
+    "id": 2,
+    "sender": "receiver",
+    "name": "Angelie Crison",
+    "message": "Yes sure, Any problem with your assignment?",
+    "time": "Today 11:53"
+  },
+  {
+    "id": 3,
+    "sender": "user",
+    "name": "You",
+    "message": "How to make a responsive display from the dashboard?",
+    "image": "https://example.com/image.png",
+    "time": "Today 11:52"
+  },
+  {
+    "id": 4,
+    "sender": "user",
+    "name": "You",
+    "message": "Is there a plugin to do this task?",
+    "time": "Today 11:52"
+  },
+  {
+    "id": 5,
+    "sender": "receiver",
+    "name": "Angelie Crison",
+    "message": "No plugins. You just have to make it smaller according to the size of the phone.",
+    "time": "Today 11:53"
+  },
+  {
+    "id": 6,
+    "sender": "receiver",
+    "name": "Angelie Crison",
+    "message": "Thank you very much. I'm glad you asked about the assignment.",
+    "time": "Today 11:53"
+  }
+]
