@@ -1,6 +1,6 @@
 import { BsThreeDots } from "react-icons/bs";
 import TaskData from "../../data/TaskToday.json";
-import { UpcomingTaskCard } from "../dynamic/DynamicCard";
+import { UpcomingTaskCard } from "../common/DynamicCard";
 
 const detailedTask = [
   {
@@ -35,7 +35,7 @@ export default function TaskToday() {
       </div>
 
       {/* Fixed Alignment for UpcomingTaskCard */}
-      <div className="rounded-lg p-4 flex flex-col gap-2 md:gap-4 mx-auto bg-white w-full">
+      <div className="rounded-lg  flex flex-col gap-2 md:gap-4 mx-auto bg-white w-full">
         {TaskData.map((task) => (
           <div key={task.id} className="w-full">
             <UpcomingTaskCard {...task} />
@@ -46,7 +46,7 @@ export default function TaskToday() {
       <hr className="m-4 md:m-6 text-gray-200" />
 
       {/* Detailed Task Section */}
-      <div className="p-4 md:p-6 bg-white rounded-lg ">
+      <div className="p-0.5 bg-white rounded-lg ">
         {/* Header */}
         <div className="flex justify-between items-center py-2 md:py-3">
           <h2 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[0.9rem] md:text-[1rem] leading-[1.5] tracking-[-0.02em]">

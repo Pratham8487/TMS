@@ -1,7 +1,7 @@
-import DynamicList from "../Components/dynamic/DynamicList";
-import mentorsData from "../data/MentorsData.json";
-import mentors from "../data/Mentors.json";
-import { MentorCard } from "../Components/dynamic/DynamicCard";
+import DynamicList from "../../Components/common/DynamicList";
+import mentorsData from "../../data/MentorsData.json";
+import mentors from "../../data/Mentors.json";
+import { MentorCard } from "../../Components/common/DynamicCard";
 
 export default function Mentors() {
   return (

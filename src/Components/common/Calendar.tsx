@@ -48,23 +48,20 @@ const Calendar = () => {
           </span>
         </button>
       </div>
-
       <div className="grid grid-cols-7 text-center mb-3 relative text-xs sm:text-sm">
         {DAYS_OF_WEEK.map((day, index) => (
           <div
             key={index}
-            className="font-semibold text-gray-500 flex justify-center items-center h-6 sm:h-8"
+            className={`font-semibold text-gray-500 flex justify-center items-center h-6 sm:h-8 `}
           >
             {day.label}
           </div>
         ))}
       </div>
-
       <div className="grid grid-cols-7 relative">
         {weekDays.map((day) => {
           const isSelected =
             format(day, "yyyy-MM-dd") === format(selectedDate, "yyyy-MM-dd");
-
           return (
             <button
               key={day.toString()}

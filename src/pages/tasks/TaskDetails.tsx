@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import TaskData from "../data/TaskData.json";
+import TaskData from "../../data/TaskData.json";
 import { FaUserFriends, FaClock } from "react-icons/fa";
-import FileUpload from "../Components/dynamic/FileUpload";
+import FileUpload from "../../Components/common/FileUpload";
 import { useNavigate } from "react-router-dom";
 
 const TaskDetails = () => {

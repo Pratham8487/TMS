@@ -25,13 +25,10 @@
 //   );
 // }
 
-
-
-
 import { useNavigate } from "react-router-dom";
-import DynamicList from "../Components/dynamic/DynamicList";
-import TaskData from "../data/TaskData.json";
-import { UpcomingTaskCard } from "../Components/dynamic/DynamicCard";
+import DynamicList from "../../Components/common/DynamicList";
+import TaskData from "../../data/TaskData.json";
+import { UpcomingTaskCard } from "../../Components/common/DynamicCard";
 
 export default function Task() {
   const navigate = useNavigate();
@@ -43,7 +40,10 @@ export default function Task() {
           title="Time Limit"
           data={TaskData}
           CardComponent={({ id, ...props }) => (
-            <div onClick={() => navigate(`/tasks/${id}`)} className="cursor-pointer">
+            <div
+              onClick={() => navigate(`/tasks/${id}`)}
+              className="cursor-pointer"
+            >
               <UpcomingTaskCard id={id} {...props} />
             </div>
           )}
@@ -55,7 +55,10 @@ export default function Task() {
           title="New Task"
           data={TaskData}
           CardComponent={({ id, ...props }) => (
-            <div onClick={() => navigate(`/tasks/${id}`)} className="cursor-pointer">
+            <div
+              onClick={() => navigate(`/tasks/${id}`)}
+              className="cursor-pointer"
+            >
               <UpcomingTaskCard id={id} {...props} />
             </div>
           )}

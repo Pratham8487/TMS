@@ -8,12 +8,12 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import DynamicList from "./dynamic/DynamicList";
-import { MentorCard, UpcomingTaskCard } from "./dynamic/DynamicCard";
+import DynamicList from "./common/DynamicList";
+import { MentorCard, UpcomingTaskCard } from "./common/DynamicCard";
 import mentors from "../data/MentorsData.json";
 import upcomingtask from "../data/UpcomingTaskData.json";
-import Calendar from "./calendar/Calendar";
-import TaskToday from "../Components/calendar/TaskToday";
+import Calendar from "./common/Calendar";
+import TaskToday from "../Components/common/TaskToday";
 
 export default function Home() {
   const data = [

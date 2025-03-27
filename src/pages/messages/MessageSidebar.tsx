@@ -32,20 +32,21 @@ export default function MessageSidebar({
   }, []);
 
   return (
-    <div className="max-w-[26.375rem] max-h-[40rem] h-full py-4 px-1 bg-white">
+    <div className="lg:max-w-[26.375rem] md:max-h-[40rem] h-full py-4 px-1 bg-white">
       <div className="relative my-4 ">
         <input
           type="text"
           placeholder="Search Name"
-          className="min-w-[25rem] p-2 pl-6 pr-12 text-[#8E92BC] rounded-xl outline-none shadow-xs focus:ring-2 focus:ring-indigo-500"
+          className="w-full p-2 pl-6 pr-12 text-[#8E92BC] rounded-xl outline-none shadow-xs focus:ring-2 focus:ring-indigo-500"
         />
         <img
           src={SearchIcon}
-          className="absolute right-5 top-1/2 h-[1.3rem] transform -translate-y-1/2 text-gray-500 text-xl"
+          className="absolute right-3 top-1/2 h-[1.3rem] transform -translate-y-1/2 text-gray-500 text-xl"
           alt="not found"
         />
       </div>
-      <div className="w-full px-1 max-h-[32rem] pt-5 overflow-y-auto overflow-x-hidden">
+      {/* User List */}
+      <div className="md:max-h-[32rem] flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-gray-100 overflow-x-hidden [&::-webkit-scrollbar]:hidden">
         {users.map((user) => (
           <div
             key={user.id}
@@ -55,7 +56,7 @@ export default function MessageSidebar({
             }}
           >
             <div
-              className={`items-center w-[22rem] h-[3.5rem] p-[0.625rem] px-[1.25rem] flex rounded-[0.625rem] gap-[0.625rem] hover:cursor-pointer 
+              className={`items-center p-[0.625rem] px-[1rem] flex rounded-[0.625rem] gap-[0.625rem] hover:cursor-pointer 
               ${
                 selectedUserId === user.id
                   ? "bg-[#FAFAFA]"
@@ -65,10 +66,10 @@ export default function MessageSidebar({
               <img
                 src={user.image}
                 alt="Not Found"
-                className="w-14 h-12 rounded-full object-cover"
+                className="w-12 h-12 rounded-full object-cover"
               />
-              <div className="w-full space-y-2">
-                <div className="w-full flex justify-between items-center">
+              <div className="ml-3 flex-grow">
+                <div className="flex justify-between items-center">
                   <h1 className="text-[#141522] font-[600] text-[0.875rem] leading-[1.5] tracking-[-0.02em] align-middle font-[Plus Jakarta Sans]">
                     {user.name}
                   </h1>
@@ -76,13 +77,13 @@ export default function MessageSidebar({
                     {user?.Time}
                   </p>
                 </div>
-                <div className="w-full flex justify-between items-center">
+                <div className="flex justify-between items-center">
                   <h1></h1>
                   <img src={Notification} alt="not found" />
                 </div>
               </div>
             </div>
-            <hr className="w-[22rem] border border-[#F5F5F7] my-4 rotate-180" />
+            <hr className="w-full border border-[#F5F5F7] my-4 rotate-180" />
           </div>
         ))}
       </div>
