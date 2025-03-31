@@ -1,12 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import img1 from "../assets/book-square.png";
-
-import { GrOverview } from "react-icons/gr";
+import { BsGrid } from "react-icons/bs";
 import { IoMdBook } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
-import { LuMessageSquareText } from "react-icons/lu";
-import { CiSettings } from "react-icons/ci";
 import { IoReorderThreeOutline } from "react-icons/io5";
+import { LuMessageSquareMore } from "react-icons/lu";
+import { IoSettingsOutline } from "react-icons/io5";
 import { useState } from "react";
 
 const Sidebar = () => {
@@ -17,15 +16,15 @@ const Sidebar = () => {
     <>
       {/* Menu Icon for Mobile View */}
       {!isOpen && (
-        <div className="block md:hidden p-4 absolute top-4 left-4 z-50">
+        <div className=" md:hidden absolute z-50 border-gray-200 rounded-full w-[2.75rem] h-[2.75rem] top-[2rem] left-[1.5rem] border-[1px] p-[0.625rem] gap-[0.625rem] flex items-center justify-center">
           <IoReorderThreeOutline
-            className="w-10 h-10 cursor-pointer text-gray-700"
+            className="w-6 h-6 cursor-pointer text-gray-700"
             onClick={() => setIsOpen(true)}
           />
         </div>
       )}
       <div
-        className={`w-[15.75rem] min-h-screen fixed bg-white top-0 left-0 transform ${
+        className={`w-[15.75rem] min-h-screen fixed bg-white top-0 left-0 transform border-r border-gray-200 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 md:relative md:translate-x-0 md:block z-40 sm:overflow-visible sm:max-h-full`}
       >
@@ -44,7 +43,7 @@ const Sidebar = () => {
                 : "text-[#8E92BC] bg-[#FFFFFF]"
             } rounded-lg`}
           >
-            <GrOverview />
+            <BsGrid className="h-6 w-6" />
             <p>Overview</p>
           </Link>
 
@@ -57,7 +56,7 @@ const Sidebar = () => {
                 : "text-[#8E92BC] bg-[#FFFFFF]"
             } rounded-lg`}
           >
-            <IoMdBook />
+            <IoMdBook className="h-6 w-6" />
             <p>Task</p>
           </Link>
 
@@ -71,7 +70,7 @@ const Sidebar = () => {
                 : "text-[#8E92BC] bg-[#FFFFFF]"
             } rounded-lg`}
           >
-            <CgProfile />
+            <CgProfile className="h-6 w-6" />
             <p>Mentors</p>
           </Link>
 
@@ -84,7 +83,7 @@ const Sidebar = () => {
                 : "text-[#8E92BC] bg-[#FFFFFF]"
             } rounded-lg`}
           >
-            <LuMessageSquareText />
+            <LuMessageSquareMore className="h-6 w-6" />
             <p>Message</p>
           </Link>
 
@@ -97,7 +96,7 @@ const Sidebar = () => {
                 : "text-[#8E92BC] bg-[#FFFFFF]"
             } rounded-lg`}
           >
-            <CiSettings />
+            <IoSettingsOutline className="h-6 w-6" />
             <p>Settings</p>
           </Link>
         </div>

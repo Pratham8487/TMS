@@ -46,7 +46,7 @@ export default function TaskToday() {
       <hr className="m-4 md:m-6 text-gray-200" />
 
       {/* Detailed Task Section */}
-      <div className="p-0.5 bg-white rounded-lg ">
+      <div className="p-0.5 bg-white rounded-lg space-y-6.5">
         {/* Header */}
         <div className="flex justify-between items-center py-2 md:py-3">
           <h2 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[0.9rem] md:text-[1rem] leading-[1.5] tracking-[-0.02em]">
@@ -57,7 +57,7 @@ export default function TaskToday() {
           </p>
         </div>
 
-        {/* Task List */}
+        {/*Detail Task List */}
         <ul className="mt-4 space-y-6 md:space-y-10">
           {detailedTask[0].tasks.map((task) => (
             <li key={task.id} className="flex items-center gap-3 md:gap-4">

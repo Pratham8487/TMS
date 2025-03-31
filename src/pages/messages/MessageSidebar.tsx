@@ -32,19 +32,20 @@ export default function MessageSidebar({
   }, []);
 
   return (
-    <div className="lg:max-w-[26.375rem] md:max-h-[40rem] h-full py-4 px-1 bg-white">
-      <div className="relative my-4 ">
+    <div className="lg:max-w-[26.375rem] md:max-h-[40rem] h-full py-4 px-3 bg-white">
+      <div className="relative my-4">
         <input
           type="text"
           placeholder="Search Name"
-          className="w-full p-2 pl-6 pr-12 text-[#8E92BC] rounded-xl outline-none shadow-xs focus:ring-2 focus:ring-indigo-500"
+          className="border border-[#F5F5F7] w-full h-[3.25rem] rounded-[0.625rem] p-[0.875rem_3rem_0.875rem_1.75rem] placeholder:text-[#8E92BC] placeholder:font-[Plus Jakarta Sans] placeholder:font-normal placeholder:text-[0.9rem] placeholder:leading-[100%] placeholder:tracking-[-0.01em]"
         />
         <img
           src={SearchIcon}
-          className="absolute right-3 top-1/2 h-[1.3rem] transform -translate-y-1/2 text-gray-500 text-xl"
-          alt="not found"
+          className="absolute right-6 top-1/2 h-[1.3rem] transform -translate-y-1/2"
+          alt="Search"
         />
       </div>
+
       {/* User List */}
       <div className="md:max-h-[32rem] flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-gray-100 overflow-x-hidden [&::-webkit-scrollbar]:hidden">
         {users.map((user) => (

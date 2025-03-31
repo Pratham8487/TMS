@@ -4,7 +4,8 @@
     "sender": "user",
     "name": "You",
     "message": "Morning Angelie, I have a question about My Task",
-    "time": "Today 11:52"
+    "time": "Today 11:52",
+    "lastMessage": "Thank you very much. I'm glad ..."
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "name": "You",
     "message": "How to make a responsive display from the dashboard?",
     "image": "https://s3-alpha-sig.figma.com/img/130d/5130/1c6cd1a343d6186cd47d2d102eb9b92f?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OfHNVVuo4NSWqduOLLkoN9djhwjP~OYxNXxxas1T1YPBtDj0mVAanOmvwpeVSuCy-QG94jkgmKHiq6Qny3mDWhr31yvrZRuEVPZhSCyLj-tc7XQoAlJ0D0ueKhGJtu3EAmO4~~~zQqT9N4l0xNR2-N9gsZrRB1T0xOnAt8ds4GvZ-IG~9DltndVO1GNdh2eAL9suSHioXt7Iy7lIEpNrUOC7LoLSz1jbMXwH~hEl5uUMKXOYG-4knnLRiZmj4vcGk3JmKHthJ0aYCVSvUwOlNynHfricdibyIg4g8Sa5SQ73I9CZZhIGu36COslWcXNuE1GypdwIKk16R~SjotVbow__",
-    "time": "Today 11:52"
+    "time": "Today 11:52",
+    "lastMessage": "Hey! How are you?..."
   },
   {
     "id": 4,
@@ -40,6 +42,7 @@
     "sender": "receiver",
     "name": "Angelie Crison",
     "message": "Thank you very much. I'm glad you asked about the assignment.",
-    "time": "Today 11:53"
+    "time": "Today 11:53",
+    "lastMessage": "Hey! How are you?..."
   }
 ]

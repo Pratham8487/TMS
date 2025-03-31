@@ -3,6 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
 import Img1 from "../assets/Profile.png";
 import { matchPath } from "react-router-dom";
+// import FilterSortButtons from "./common/FilterSortButtons";
 
 const Header = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const Header = () => {
 
   return (
     <div
-      className={`py-2 flex justify-between items-center px-2 bg-gray-50 w-full min-h-[7.25rem]  ${
+      className={`py-2 flex justify-between items-center px-2 bg-[#FFFFFF] w-full min-h-[7.25rem] border-b border-gray-200 ${
         isHomePage ? "w-[63%] max-w-screen-md" : "w-full"
       }`}
     >
@@ -32,7 +33,7 @@ const Header = () => {
           </>
         ) : isHeader ? (
           <>
-            <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em]">
+            <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em] -top-5 relative">
               Message
             </h1>
           </>
@@ -45,21 +46,21 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search Mentors"
-                className="w-96 p-2 pl-6 pr-12 text-gray-700 rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-[30rem] h-[3.25rem] top-[6.75rem] left-[2rem] rounded-[0.625rem] border-[1px] border-[#F5F5F7] p-[0.875rem_1.75rem] gap-[14.5rem]"
               />
               <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
             </div>
           </>
         ) : isTask ? (
           <>
-            <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em]">
+            <h1 className="text-[#141522] font-[Plus Jakarta Sans] font-semibold text-[1.5rem] leading-[150%] tracking-[-0.03em] align-middle">
               Explore Task
             </h1>
             <div className="relative my-4">
               <input
                 type="text"
                 placeholder="Search Task"
-                className="w-96 p-2 pl-6 pr-12 text-gray-700 rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-[30rem] h-[3.25rem] top-[6.75rem] left-[2rem] rounded-[0.625rem] border-[1px] border-[#F5F5F7] p-[0.875rem_1.75rem] gap-[14.5rem]"
               />
               <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
             </div>
@@ -73,7 +74,7 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Search Task"
-                className="w-96 p-2 pl-6 pr-12 text-gray-700 rounded-xl shadow-sm outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-[30rem] h-[3.25rem] top-[6.75rem] left-[2rem] rounded-[0.625rem] border-[1px] border-[#F5F5F7] p-[0.875rem_1.75rem] gap-[14.5rem]"
               />
               <AiOutlineSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-xl" />
             </div>
@@ -87,7 +88,7 @@ const Header = () => {
           </>
         ) : null}
       </div>
-      <div className="flex items-center gap-6 ml-auto">
+      <div className="flex items-center gap-6 ml-auto -top-2 relative ">
         <CiShoppingCart className="w-8 h-8 text-gray-700 cursor-pointer" />
         <img src={Img1} alt="Profile" className="w-10 h-10 rounded-full" />
       </div>

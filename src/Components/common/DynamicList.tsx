@@ -90,4 +90,3 @@ const DynamicList: React.FC<DynamicListProps> = ({
 };
 
 export default DynamicList;
-

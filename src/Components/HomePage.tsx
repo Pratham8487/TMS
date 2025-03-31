@@ -17,13 +17,13 @@ import TaskToday from "../Components/common/TaskToday";
 
 export default function Home() {
   const data = [
-    { name: "S", value: 3 },
-    { name: "M", value: 2 },
-    { name: "T", value: 4 },
+    { name: "S", value: 0 },
+    { name: "M", value: 1 },
+    { name: "T", value: 1 },
     { name: "W", value: 2 },
-    { name: "T", value: 3 },
-    { name: "F", value: 2 },
-    { name: "S", value: 6 },
+    { name: "T", value: 2 },
+    { name: "F", value: 1 },
+    { name: "S", value: 0 },
   ];
 
   const CustomTooltip = ({ active, payload }: any) => {
@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 px-6 py-3">
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_37%] gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_37%] gap-6 ">
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="lg:h-[17rem]">
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </div>
             <div className="md:col-span-2 lg:h-[17rem]">
-              <div className="w-full max-w-[32rem] h-auto lg:h-full rounded-[0.625rem] bg-[#F5F5F7] mt-4 sm:mt-[2rem] px-4 py-2 mx-auto">
+              <div className="w-full max-w-[32rem] h-auto lg:h-full rounded-[0.625rem] bg-[#F5F5F7] mt-4 sm:mt-[2rem] lg:px-4 py-2 mx-auto">
                 <div className="flex justify-between">
                   <h1 className="text-base sm:text-lg font-semibold">
                     Activity
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
 
           {/* Dynamic Lists with Parent-Controlled Grid */}
-          <div className="rounded-lg p-6">
+          <div className="rounded-lg lg:p-4">
             <DynamicList
               title="Monthly Mentors"
               data={mentors}
@@ -122,7 +122,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="rounded-lg p-6">
+          <div className="rounded-lg lg:p-4">
             <DynamicList
               title="Upcoming Task"
               data={upcomingtask}
@@ -136,7 +136,7 @@ export default function Home() {
           <div className="bg-white rounded-lg p-6">
             <Calendar />
           </div>
-          <div className="bg-white rounded-lg p-6 ">
+          <div className="bg-white rounded-lg lg:p-6">
             <TaskToday />
           </div>
         </div>

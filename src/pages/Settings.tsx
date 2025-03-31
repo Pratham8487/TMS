@@ -11,29 +11,28 @@ export default function Settings() {
 
   return (
     <div className="p-10 flex flex-col gap-6">
-      <div className="bg-white w-full max-w-5xl p-6 rounded-lg shadow-md h-[32rem] flex flex-col">
-        <div className="flex border-b pb-2 mb-6">
+      <div className="bg-white w-full max-w-5xl p-6 rounded-lg shadow-xs h-[32rem] flex flex-col">
+        <div className="flex pb-2 mb-2 relative">
           <button
-            className={`mr-4 font-semibold hover:cursor-pointer ${
-              activeTab === "General"
-                ? "border-b-2 border-blue-500"
-                : "text-gray-500"
-            }`}
+            className={`mr-4 font-semibold hover:cursor-pointer text-gray-500`}
             onClick={() => setActiveTab("General")}
           >
             General
           </button>
           <button
-            className={`hover:cursor-pointer ${
-              activeTab === "Notification"
-                ? "border-b-2 border-blue-500"
-                : "text-gray-500"
-            }`}
+            className={`hover:cursor-pointer text-gray-500`}
             onClick={() => setActiveTab("Notification")}
           >
             Notification
           </button>
         </div>
+        <hr
+          className={`border-2 transition-all duration-300 ${
+            activeTab === "General"
+              ? "border-blue-500 w-18"
+              : "border-transparent w-24"
+          }`}
+        />
 
         {/* General Settings */}
         {activeTab === "General" && (
@@ -43,6 +42,7 @@ export default function Settings() {
               <Select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
+                sx={{ width: "25rem" }}
               >
                 <MenuItem value="English (Default)">English (Default)</MenuItem>
                 <MenuItem value="Hindi">Hindi</MenuItem>
@@ -54,66 +54,46 @@ export default function Settings() {
               <Select
                 value={timezone}
                 onChange={(e) => setTimezone(e.target.value)}
+                sx={{ width: "25rem" }}
               >
                 <MenuItem value="English (Default)">English (Default)</MenuItem>
                 <MenuItem value="GMT">IST</MenuItem>
+                <MenuItem value="IST">GMT</MenuItem>
               </Select>
             </FormControl>
 
             <div className="flex flex-wrap gap-4 py-2">
-              <label
-                className={`flex items-center gap-2 border rounded-lg px-4 py-2 cursor-pointer ${
-                  timeFormat === "24"
-                    ? "border-blue-500 text-blue-600"
-                    : "border-gray-300 text-gray-600"
-                }`}
-              >
-                <input
-                  type="radio"
-                  name="timeFormat"
-                  value="24"
-                  checked={timeFormat === "24"}
-                  onChange={() => setTimeFormat("24")}
-                  className="hidden"
-                />
-                <span>24 Hours</span>
-                <span
-                  className={`w-4 h-4 border-2 rounded-full flex items-center justify-center ${
-                    timeFormat === "24" ? "border-blue-500" : "border-gray-300"
+              {["24", "12"].map((format) => (
+                <label
+                  key={format}
+                  className={`flex items-center gap-2 border rounded-lg px-4 py-2 cursor-pointer ${
+                    timeFormat === format
+                      ? "border-blue-500 text-blue-600"
+                      : "border-gray-300 text-gray-600"
                   }`}
                 >
-                  {timeFormat === "24" && (
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  )}
-                </span>
-              </label>
-
-              <label
-                className={`flex items-center gap-2 border rounded-lg px-4 py-2 cursor-pointer ${
-                  timeFormat === "12"
-                    ? "border-blue-500 text-blue-600"
-                    : "border-gray-300 text-gray-600"
-                }`}
-              >
-                <input
-                  type="radio"
-                  name="timeFormat"
-                  value="12"
-                  checked={timeFormat === "12"}
-                  onChange={() => setTimeFormat("12")}
-                  className="hidden"
-                />
-                <span>12 Hours</span>
-                <span
-                  className={`w-4 h-4 border-2 rounded-full flex items-center justify-center ${
-                    timeFormat === "12" ? "border-blue-500" : "border-gray-300"
-                  }`}
-                >
-                  {timeFormat === "12" && (
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  )}
-                </span>
-              </label>
+                  <input
+                    type="radio"
+                    name="timeFormat"
+                    value={format}
+                    checked={timeFormat === format}
+                    onChange={() => setTimeFormat(format)}
+                    className="hidden"
+                  />
+                  <span>{format} Hours</span>
+                  <span
+                    className={`w-4 h-4 border-2 rounded-full flex items-center justify-center ${
+                      timeFormat === format
+                        ? "border-blue-500"
+                        : "border-gray-300"
+                    }`}
+                  >
+                    {timeFormat === format && (
+                      <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+                    )}
+                  </span>
+                </label>
+              ))}
             </div>
           </div>
         )}
@@ -121,20 +101,14 @@ export default function Settings() {
         {/* Notification Settings */}
         {activeTab === "Notification" && (
           <div className="flex flex-col gap-4 flex-1">
-            {[
-              { name: "message", label: "Message" },
-              { name: "taskUpdate", label: "Task Update" },
-              { name: "taskDeadline", label: "Task Deadline" },
-              { name: "mentorHelp", label: "Mentor Help" },
-            ].map((item) => (
-              <div
-                key={item.name}
-                className="flex items-center gap-2 p-1 space-y-4"
-              >
-                <Switch color="primary" />
-                <p>{item.label}</p>
-              </div>
-            ))}
+            {["Message", "Task Update", "Task Deadline", "Mentor Help"].map(
+              (label) => (
+                <div key={label} className="flex items-center gap-2 p-1">
+                  <Switch color="primary" />
+                  <p>{label}</p>
+                </div>
+              )
+            )}
           </div>
         )}
 
@@ -142,7 +116,7 @@ export default function Settings() {
         <Button
           variant="contained"
           color="primary"
-          className="mt-auto w-full sm:w-auto"
+          className="mt-auto max-w-[13.5rem]"
         >
           Save Changes
         </Button>
