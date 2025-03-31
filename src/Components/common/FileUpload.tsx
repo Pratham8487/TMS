@@ -63,7 +63,9 @@ const FileUpload = () => {
 
       {selectedFile && (
         <div className="mt-4 text-center w-full max-w-xs md:max-w-md lg:max-w-lg">
-          <p className="text-gray-700 text-sm break-words">{selectedFile.name}</p>
+          <p className="text-gray-700 text-sm break-words">
+            {selectedFile.name}
+          </p>
           <button
             onClick={handleUpload}
             className="mt-3 px-5 py-2 bg-blue-500 text-white rounded-lg w-full md:w-auto hover:bg-blue-600 transition duration-300"
@@ -74,7 +76,9 @@ const FileUpload = () => {
       )}
 
       {uploadProgress !== null && (
-        <p className="mt-2 text-gray-600 text-sm">Upload progress: {uploadProgress}%</p>
+        <p className="mt-2 text-gray-600 text-sm">
+          Upload progress: {uploadProgress}%
+        </p>
       )}
     </div>
   );

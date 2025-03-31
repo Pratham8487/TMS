@@ -3,7 +3,6 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
 import Img1 from "../assets/Profile.png";
 import { matchPath } from "react-router-dom";
-// import FilterSortButtons from "./common/FilterSortButtons";
 
 const Header = () => {
   const location = useLocation();

@@ -16,7 +16,7 @@ const ChatUI: React.FC<{ messages: Message[] }> = ({ messages }) => {
       chatContainerRef.current.scrollTop =
         chatContainerRef.current.scrollHeight;
     }
-  }, [messages]); 
+  }, [messages]);
 
   return (
     <div className="w-full lg:min-h-[27.5rem] lg:max-h-[27.5rem] flex bg-gray-100">
@@ -42,9 +42,9 @@ const ChatUI: React.FC<{ messages: Message[] }> = ({ messages }) => {
                       : "bg-white text-black rounded-bl-[0.625rem] rounded-br-[0.625rem] rounded-tr-[0.625rem]"
                   }`}
                   style={{
-                    display: "inline-block", 
-                    maxWidth: "50%", 
-                    wordBreak: "break-word", 
+                    display: "inline-block",
+                    maxWidth: "50%",
+                    wordBreak: "break-word",
                   }}
                 >
                   {msg.image && (
@@ -54,13 +54,6 @@ const ChatUI: React.FC<{ messages: Message[] }> = ({ messages }) => {
                       className="mb-2 max-w-full w-[23.25rem] h-[8.8125rem] rounded-[0.3125rem]"
                     />
                   )}
-                  {/* {msg.image && msg.sender !== "user" && (
-                    <img
-                      src={msg.image}
-                      alt="Message attachment"
-                      className="mb-2 max-w-full w-[23.25rem] h-[8.8125rem] rounded-[0.3125rem]"
-                    />
-                  )} */}
                   <p
                     className={`${
                       msg.sender === "user" ? "pr-2" : "pr-[0.625rem]"
