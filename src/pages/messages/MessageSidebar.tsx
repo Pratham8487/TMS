@@ -32,12 +32,17 @@ export default function MessageSidebar({
   }, []);
 
   return (
-    <div className="lg:max-w-[26.375rem] md:max-h-[40rem] h-full py-4 px-3 bg-white">
+    <div className="lg:max-w-[26.375rem] md:max-h-[38rem] h-full py-3 px-5 bg-white">
+      <div className="block md:hidden w-full text-left px-4 lg:hidden">
+        <h1 className="text-[#141522] font-semibold text-2xl tracking-[-0.03em] ">
+          Message
+        </h1>
+      </div>
       <div className="relative my-4">
         <input
           type="text"
           placeholder="Search Name"
-          className="border border-[#F5F5F7] w-full h-[3.25rem] rounded-[0.625rem] p-[0.875rem_3rem_0.875rem_1.75rem] placeholder:text-[#8E92BC] placeholder:font-[Plus Jakarta Sans] placeholder:font-normal placeholder:text-[0.9rem] placeholder:leading-[100%] placeholder:tracking-[-0.01em]"
+          className=" border border-[#F5F5F7] w-full h-[3.25rem] rounded-[0.625rem] p-[0.875rem_3rem_0.875rem_1.75rem] placeholder:text-[#8E92BC] placeholder:font-[Plus Jakarta Sans] placeholder:font-normal placeholder:text-[0.9rem] placeholder:leading-[100%] placeholder:tracking-[-0.01em]"
         />
         <img
           src={SearchIcon}
@@ -45,7 +50,6 @@ export default function MessageSidebar({
           alt="Search"
         />
       </div>
-
       {/* User List */}
       <div className="md:max-h-[32rem] flex-grow overflow-y-auto scrollbar-thin scrollbar-thumb-gray-100 overflow-x-hidden [&::-webkit-scrollbar]:hidden">
         {users.map((user) => (

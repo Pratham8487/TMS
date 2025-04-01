@@ -27,7 +27,7 @@ export default function TaskToday() {
   return (
     <div className="max-h-[59rem] space-y-7">
       {/* Task Today Section */}
-      <div className="flex justify-between items-center mt-4 px-4 md:px-0">
+      <div className="flex py-2 justify-between items-center mt-4 px-4 md:px-0">
         <h1 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[1rem] md:text-lg leading-[1.5] tracking-[-0.02em] flex items-center">
           Task Today
         </h1>
@@ -46,7 +46,7 @@ export default function TaskToday() {
       <hr className="m-4 md:m-6 text-gray-200" />
 
       {/* Detailed Task Section */}
-      <div className="p-0.5 bg-white rounded-lg space-y-6.5">
+      <div className="p-0.5 bg-white rounded-lg space-y-6.5 px-4">
         {/* Header */}
         <div className="flex justify-between items-center py-2 md:py-3">
           <h2 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[0.9rem] md:text-[1rem] leading-[1.5] tracking-[-0.02em]">

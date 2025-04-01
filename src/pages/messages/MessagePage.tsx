@@ -34,7 +34,7 @@ const MessagePage = () => {
 
       {/* ChatBox - Takes full width on md but keeps sidebar on lg */}
       <div
-        className={`w-full md:w-2/3 transition-opacity duration-500 overflow-y-hidden max-h-[40rem] ${
+        className={`w-full md:w-2/3 transition-opacity duration-500 overflow-y-hidden max-h-[38rem] ${
           selectedUser && !isLoading ? "block opacity-100" : "hidden opacity-0"
         }`}
       >

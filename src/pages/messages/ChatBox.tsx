@@ -166,9 +166,7 @@ export default function ChatBox({
         </div>
       </div>
       {/* Chat Messages */}
-      <div className="flex-grow overflow-y-auto">
-        <ChatUI messages={messages} />
-      </div>
+      <ChatUI messages={messages} />
       {/* Input Box */}
       <div className="w-full bg-white px-4 sm:px-6 py-2.5 border-t border-gray-100">
         <div className="relative flex items-center">
@@ -177,7 +175,7 @@ export default function ChatBox({
             placeholder="Send your message..."
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
-            className="flex-grow text-black min-h-[3rem] sm:min-h-[4rem] rounded-xl outline-none px-4"
+            className="flex-grow text-black min-h-[3rem] break-words sm:min-h-[4rem] rounded-xl outline-none px-4 placeholder:text-[#8E92BC] placeholder:font-[Plus Jakarta Sans] placeholder:font-medium placeholder:text-[0.875rem] placeholder:leading-[150%] placeholder:tracking-[-0.02em]"
           />
           <div className="flex">
             <img

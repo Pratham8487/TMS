@@ -47,7 +47,7 @@ const Calendar: React.FC = () => {
         {DAYS_OF_WEEK.map((day) => (
           <div
             key={day.key}
-            className="font-semibold text-gray-500 flex justify-center items-center h-6 sm:h-8"
+            className="font-semibold text-gray-500 flex justify-center items-center h-6 sm:h-8 z-100"
           >
             {day.label}
           </div>
@@ -59,7 +59,6 @@ const Calendar: React.FC = () => {
         {weekDays.map((day) => {
           const isSelected =
             format(day, "yyyy-MM-dd") === format(selectedDate, "yyyy-MM-dd");
-
           return (
             <button
               key={day.toString()}

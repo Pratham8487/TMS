@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div
-      className={`py-2 flex justify-between items-center px-2 bg-[#FFFFFF] w-full min-h-[7.25rem] border-b border-gray-200 ${
+      className={`py-2 flex md:flex-row justify-between items-center px-2 bg-[#FFFFFF] w-full min-h-[7.25rem] border-b border-gray-200 ${
         isHomePage ? "w-[63%] max-w-screen-md" : "w-full"
       }`}
     >

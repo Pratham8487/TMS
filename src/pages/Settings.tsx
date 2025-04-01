@@ -11,7 +11,7 @@ export default function Settings() {
 
   return (
     <div className="p-10 flex flex-col gap-6">
-      <div className="bg-white w-full max-w-5xl p-6 rounded-lg shadow-xs h-[32rem] flex flex-col">
+      <div className="bg-white w-full max-w-5xl p-6 rounded-lg shadow-xs lg:h-[32rem] flex flex-col">
         <div className="flex pb-2 mb-2 relative">
           <button
             className={`mr-4 font-semibold hover:cursor-pointer text-gray-500`}
@@ -42,7 +42,9 @@ export default function Settings() {
               <Select
                 value={language}
                 onChange={(e) => setLanguage(e.target.value)}
-                sx={{ width: "25rem" }}
+                sx={{
+                  width: { xs: "100%", md: "25rem" }, // Full width on small screens, 25rem on md and lg
+                }}
               >
                 <MenuItem value="English (Default)">English (Default)</MenuItem>
                 <MenuItem value="Hindi">Hindi</MenuItem>
@@ -54,7 +56,9 @@ export default function Settings() {
               <Select
                 value={timezone}
                 onChange={(e) => setTimezone(e.target.value)}
-                sx={{ width: "25rem" }}
+                sx={{
+                  width: { xs: "100%", md: "25rem" }, // Full width on small screens, 25rem on md and lg
+                }}
               >
                 <MenuItem value="English (Default)">English (Default)</MenuItem>
                 <MenuItem value="GMT">IST</MenuItem>
