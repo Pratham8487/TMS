@@ -26,7 +26,7 @@ const detailedTask = [
 export default function TaskToday() {
   return (
     <div className="max-h-[59rem] space-y-7">
-      {/* Task Today Section */}
+      
       <div className="flex py-2 justify-between items-center mt-4 px-4 md:px-0">
         <h1 className="text-[#141522] font-['Plus_Jakarta_Sans'] font-semibold text-[1rem] md:text-lg leading-[1.5] tracking-[-0.02em] flex items-center">
           Task Today
@@ -34,7 +34,7 @@ export default function TaskToday() {
         <BsThreeDots className="text-lg md:text-xl" />
       </div>
 
-      {/* Fixed Alignment for UpcomingTaskCard */}
+      
       <div className="rounded-lg  flex flex-col gap-2 md:gap-4 mx-auto bg-white w-full">
         {TaskData.map((task) => (
           <div key={task.id} className="w-full">
@@ -57,7 +57,7 @@ export default function TaskToday() {
           </p>
         </div>
 
-        {/*Detail Task List */}
+        
         <ul className="mt-4 space-y-6 md:space-y-10">
           {detailedTask[0].tasks.map((task) => (
             <li key={task.id} className="flex items-center gap-3 md:gap-4">
@@ -71,7 +71,7 @@ export default function TaskToday() {
           ))}
         </ul>
 
-        {/* Button */}
+        
         <div className="mt-6">
           <button className="mt-8 md:mt-10 px-6 py-2 md:px-[7.5rem] md:py-3 w-full bg-[#546FFF] text-white text-sm md:text-base font-semibold rounded-lg">
             Go To Detail

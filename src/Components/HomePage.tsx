@@ -14,8 +14,10 @@ import mentors from "../data/MentorsData.json";
 import upcomingtask from "../data/UpcomingTaskData.json";
 import Calendar from "./common/Calendar";
 import TaskToday from "../Components/common/TaskToday";
+// import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+
   const data = [
     { name: "S", value: 0 },
     { name: "M", value: 1 },
@@ -25,6 +27,8 @@ export default function Home() {
     { name: "F", value: 1 },
     { name: "S", value: 0 },
   ];
+
+  // const navigate = useNavigate();
 
   const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
@@ -127,6 +131,14 @@ export default function Home() {
               title="Upcoming Task"
               data={upcomingtask}
               CardComponent={UpcomingTaskCard}
+              // CardComponent={({ id, ...props }) => (
+              //   <div
+              //     onClick={() => navigate(`/tasks/${id}`)}
+              //     className="cursor-pointer"
+              //   >
+              //     <UpcomingTaskCard id={id} {...props} />
+              //   </div>
+              // )}
               gridCols="lg:grid-cols-2 sm:grid-cols-2 grid-cols-1"
             />
           </div>
@@ -136,7 +148,7 @@ export default function Home() {
           <div className="bg-white rounded-lg p-6">
             <Calendar />
           </div>
-          <div className="bg-white rounded-lg lg:p-6">
+          <div className="bg-white rounded-lg lg:p-2">
             <TaskToday />
           </div>
         </div>

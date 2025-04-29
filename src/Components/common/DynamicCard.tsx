@@ -38,7 +38,7 @@ export const MentorCard: React.FC<Mentor> = ({
 }) => {
   return (
     <div
-      className={`bg-[#FFFF] rounded-[0.625rem] px-4 sm:min-w-full min-h-[10rem] sm:h-40 flex flex-col justify-between ${
+      className={`bg-[#FFFF] rounded-[0.625rem] px-4 sm:min-w-full  min-h-[10rem] sm:h-40 flex flex-col justify-between ${
         description
           ? "min-h-[14.25rem] py-6 sm:max-w-none max-w-[22.25rem]"
           : "min-h-[8.75rem] py-8 sm:max-w-none max-w-[20.5rem]"
